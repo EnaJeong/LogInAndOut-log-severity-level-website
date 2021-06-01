@@ -1,0 +1,130 @@
+{% extends 'base.html' %}
+
+{% block topbar %}
+    <span class="page-title">데이터 시각화</span>
+    <div class="quick-link-wrapper d-md-flex flex-md-wrap">
+        <ul class="quick-links">
+            <li><a class="selected" href="{% url 'eda' %}">데이터 분포</a></li>
+            <li><a href="{% url 'eda_wordcloud' %}">위험도별 최다 빈출 단어</a></li>
+        </ul>
+    </div>
+{% endblock %}
+
+{% block content %}
+
+    <!-- Content Row : 전체 로그 개수 -->
+    <div class="row justify-content-md-center mb-2">
+        <!-- 전체 로그 개수 -->
+        <div class="col-xl-4 lg-6">
+            <div class="row no-gutters align-items-center">
+                <div class="col">
+                    <h1 class="font-weight-bold text-muted text-center mb-0">
+                        전체 훈련 로그 개수
+                    </h1>
+                </div>
+            </div>
+            <div class="row no-gutters align-items-center">
+                <div class="col">
+                    <div class="font-weight-bold text-black text-big-6 text-center mb-2">
+                        472,972
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Content Row : 위험도별 로그 -->
+    <div class="row">
+        <div class="col-lg-12">
+            <div class="card shadow mb-4">
+                <div class="card-header py-3 d-flex flex-row align-items-center justify-content-between">
+                    <h4 class="font-weight-bold text-primary m-0">
+                        위험도별 로그 분포
+                    </h4>
+                </div>
+                <div class="card-body">
+                    <div class="row">
+                        <div class="col-xl-8 mb-4">
+                            <div class="h4 text-center font-weight-bold">
+                                위험도별 로그 개수
+                            </div>
+                            <div class="chart-view">
+                                <canvas id="levelCountsChart"></canvas>
+                            </div>
+                        </div>
+                        <div class="col-xl-4">
+                            <div class="h4 text-center font-weight-bold">
+                                위험도별 로그 비율
+                            </div>
+                            <div class="chart-static">
+                                <canvas id="levelDonutChart"></canvas>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Content Row : keyword (first word, second word) -->
+    <div class="row">
+        <div class="col-lg-12">
+            <div class="card shadow mb-4">
+                <div class="card-header py-3 d-flex flex-row align-items-center justify-content-between">
+                    <h4 class="font-weight-bold text-primary m-0">
+                        키워드별 로그 위험도 분포
+                    </h4>
+                </div>
+                <div class="card-body">
+                    <div class="row justify-content-md-center mb-4">
+                        <div class="col-xl-8">
+                            <div class="h4 text-center font-weight-bold">
+                                1차 키워드별 위험도 분포
+                            </div>
+                            {{ sunburst | safe }}
+                        </div>
+                    </div>
+                    <div class="blank py-4"></div>
+                    <div class="row mb-4 pb-4">
+                        <div class="col-xl-12">
+                            <div class="h4 text-center font-weight-bold">
+                                1차 키워드와 위험도별 로그 개수
+                            </div>
+                            <div class="py-4"></div>
+                            <div class="chart-large mb-4">
+                                <canvas id="firstWordLevelCountsChart"></canvas>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="blank py-4 my-4"></div>
+                    <div class="row justify-content-md-center mb-4">
+                        <div class="col-xl-8">
+                            <div class="h4 text-center font-weight-bold">
+                                2차 키워드별 위험도 분포
+                            </div>
+                            {{ sunburst_masked | safe }}
+                        </div>
+                    </div>
+                    <div class="blank py-4"></div>
+                    <div class="row mb-4">
+                        <div class="col-xl-12">
+                            <div class="h4 text-center font-weight-bold">
+                                2차 키워드와 위험도별 로그 개수
+                            </div>
+                            <div class="py-4"></div>
+                            <div class="chart mb-4" style="height:100rem;">
+                                <canvas id="secondKeywordLevelCountsChart"></canvas>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+{% endblock %}
+
+{% block script %}
+    {% load static %}
+        <script src="{% static 'js/chart/eda_overview.js' %}"></script>
+{% endblock %}

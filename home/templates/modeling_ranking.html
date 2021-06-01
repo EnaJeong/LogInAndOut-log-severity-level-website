@@ -1,0 +1,38 @@
+{% extends 'base.html' %}
+
+{% block topbar %}
+    <span class="page-title">모델링</span>
+    <div class="quick-link-wrapper d-md-flex flex-md-wrap">
+        <ul class="quick-links">
+            <li><a href="{% url 'modeling' %}">모델 상세</a></li>
+            <li><a class="selected" href="{% url 'modeling_ranking' %}">대회 순위 그래프</a></li>
+        </ul>
+    </div>
+{% endblock %}
+
+{% block content %}
+
+    <!-- Content Row : Ranking Cart -->
+    <div class="row justify-content-md-center pb-4">
+        <div class="col-lg-12">
+            <div class="row no-gutters align-items-center mb-4 pb-4">
+                <div class="col mr-2">
+                    <h1 class="font-weight-bold text-primary text-center">
+                        대회 순위 변동 그래프
+                    </h1>
+                </div>
+            </div>
+            <div class="row justify-content-md-center">
+                <div class="col-lg-8 chart-view">
+                    <canvas id="rankingChart"></canvas>
+                </div>
+            </div>
+        </div>
+    </div>
+
+{% endblock %}
+
+{% block script %}
+    {% load static %}
+        <script src="{% static 'js/chart/ranking_chart.js' %}"></script>
+{% endblock %}

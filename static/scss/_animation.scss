@@ -1,0 +1,59 @@
+@mixin transition($settings) {
+  -webkit-transition: $settings;
+  -moz-transition: $settings;
+  -ms-transition: $settings;
+  -o-transition: $settings;
+  transition: $settings;
+}
+
+// dropdown
+@keyframes dropdownAnimation {
+  from {
+    opacity: 0;
+    transform: translate3d(0, -30px, 0);
+  }
+
+  to {
+    opacity: 1;
+    transform: none;
+    transform: translate3d(0, 0px, 0);
+  }
+}
+
+.dropdownAnimation {
+  animation-name: dropdownAnimation;
+  animation-duration: $transition-duration;
+  animation-fill-mode: both;
+}
+
+// Grow In
+@keyframes growIn {
+  0% {
+    transform: scale(0.9);
+    opacity: 0;
+  }
+  100% {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+.animated--grow-in {
+  animation-name: growIn;
+  animation-duration: 200ms;
+  animation-timing-function: transform cubic-bezier(.18,1.25,.4,1), opacity cubic-bezier(0,1,.4,1);
+}
+
+// Fade In
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+.animated--fade-in {
+  animation-name: fadeIn;
+  animation-duration: 200ms;
+  animation-timing-function: opacity cubic-bezier(0,1,.4,1);
+}

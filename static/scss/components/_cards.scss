@@ -1,0 +1,74 @@
+// Custom Card Styling
+
+.card {
+  .card-header {
+    background-color: $card-header-bg;
+    padding: 1rem 1.25rem;
+    border-bottom: 1px solid $card-border-color;
+  }
+
+  .card-body {
+    padding: $card-padding-y $card-padding-x;
+
+    &.no-gutter {
+      padding: 0;
+    }
+
+    +.card-body {
+      padding-top: 0;
+    }
+  }
+
+  &.card-rounded {
+    border-radius: 5px;
+  }
+
+  &.card-faded {
+    background: #b5b0b2;
+    border-color: #b5b0b2;
+  }
+
+  &.card-no-shadow {
+    box-shadow: none;
+  }
+}
+
+.card-title {
+  font-family: $font-family-title;
+  font-weight: 600;
+  color: #212229;
+  margin-bottom: 0;
+  font-size: 1.5em;
+  text-transform: capitalize;
+
+  .rtl & {
+    text-align: right;
+  }
+}
+
+.card-subtitle {
+  // @extend .text-gray;
+  font-weight: 300;
+  margin-top: 0.625rem;
+  margin-bottom: 0.625rem;
+}
+
+.card-description {
+  margin-bottom: 0.9375rem;
+
+  .rtl & {
+    text-align: right;
+  }
+}
+
+
+.stretch-card {
+  display: flex;
+  align-items: stretch;
+  justify-content: stretch;
+
+  >.card {
+    width: 100%;
+    min-width: 100%;
+  }
+}

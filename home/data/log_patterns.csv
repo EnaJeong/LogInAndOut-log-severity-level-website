@@ -1,0 +1,449 @@
+,first_word,category_1,category_2,level,count
+0,--MARK--:,None,None,위험도 0,12
+1,--MARK--:,None,None,위험도 1,0
+2,--MARK--:,None,None,위험도 2,0
+3,--MARK--:,None,None,위험도 3,0
+4,--MARK--:,None,None,위험도 4,0
+5,--MARK--:,None,None,위험도 5,0
+6,--MARK--:,None,None,위험도 6,0
+7,E:,probe_rpminfo: ,None,위험도 0,249
+8,E:,probe_rpminfo: ,None,위험도 1,0
+9,E:,probe_rpminfo: ,None,위험도 2,0
+10,E:,probe_rpminfo: ,None,위험도 3,0
+11,E:,probe_rpminfo: ,None,위험도 4,0
+12,E:,probe_rpminfo: ,None,위험도 5,0
+13,E:,probe_rpminfo: ,None,위험도 6,0
+14,E:,probe_rpmverifyfile: ,None,위험도 0,48
+15,E:,probe_rpmverifyfile: ,None,위험도 1,0
+16,E:,probe_rpmverifyfile: ,None,위험도 2,0
+17,E:,probe_rpmverifyfile: ,None,위험도 3,0
+18,E:,probe_rpmverifyfile: ,None,위험도 4,0
+19,E:,probe_rpmverifyfile: ,None,위험도 5,0
+20,E:,probe_rpmverifyfile: ,None,위험도 6,0
+21,File,File <FILE> checksum changed.,None,위험도 0,0
+22,File,File <FILE> checksum changed.,None,위험도 1,0
+23,File,File <FILE> checksum changed.,None,위험도 2,0
+24,File,File <FILE> checksum changed.,None,위험도 3,0
+25,File,File <FILE> checksum changed.,None,위험도 4,0
+26,File,File <FILE> checksum changed.,None,위험도 5,397
+27,File,File <FILE> checksum changed.,None,위험도 6,0
+28,File,File <FILE> is owned by root and has written permissions to anyone.,None,위험도 0,0
+29,File,File <FILE> is owned by root and has written permissions to anyone.,None,위험도 1,0
+30,File,File <FILE> is owned by root and has written permissions to anyone.,None,위험도 2,0
+31,File,File <FILE> is owned by root and has written permissions to anyone.,None,위험도 3,0
+32,File,File <FILE> is owned by root and has written permissions to anyone.,None,위험도 4,0
+33,File,File <FILE> is owned by root and has written permissions to anyone.,None,위험도 5,244
+34,File,File <FILE> is owned by root and has written permissions to anyone.,None,위험도 6,0
+35,File,File <FILE> was added.,None,위험도 0,0
+36,File,File <FILE> was added.,None,위험도 1,0
+37,File,File <FILE> was added.,None,위험도 2,0
+38,File,File <FILE> was added.,None,위험도 3,181
+39,File,File <FILE> was added.,None,위험도 4,0
+40,File,File <FILE> was added.,None,위험도 5,0
+41,File,File <FILE> was added.,None,위험도 6,0
+42,NTFS,None,None,위험도 0,0
+43,NTFS,None,None,위험도 1,0
+44,NTFS,None,None,위험도 2,0
+45,NTFS,None,None,위험도 3,0
+46,NTFS,None,None,위험도 4,0
+47,NTFS,None,None,위험도 5,25
+48,NTFS,None,None,위험도 6,0
+49,OpenSCAP,None,None,위험도 0,3
+50,OpenSCAP,None,None,위험도 1,0
+51,OpenSCAP,None,None,위험도 2,0
+52,OpenSCAP,None,None,위험도 3,0
+53,OpenSCAP,None,None,위험도 4,0
+54,OpenSCAP,None,None,위험도 5,0
+55,OpenSCAP,None,None,위험도 6,0
+56,System,CIS,None,위험도 0,0
+57,System,CIS,None,위험도 1,532
+58,System,CIS,None,위험도 2,0
+59,System,CIS,None,위험도 3,0
+60,System,CIS,None,위험도 4,0
+61,System,CIS,None,위험도 5,0
+62,System,CIS,None,위험도 6,0
+63,System,SSH Hardening,None,위험도 0,0
+64,System,SSH Hardening,None,위험도 1,288
+65,System,SSH Hardening,None,위험도 2,0
+66,System,SSH Hardening,None,위험도 3,0
+67,System,SSH Hardening,None,위험도 4,0
+68,System,SSH Hardening,None,위험도 5,0
+69,System,SSH Hardening,None,위험도 6,0
+70,The,None,None,위험도 0,0
+71,The,None,None,위험도 1,0
+72,The,None,None,위험도 2,11
+73,The,None,None,위험도 3,0
+74,The,None,None,위험도 4,0
+75,The,None,None,위험도 5,0
+76,The,None,None,위험도 6,0
+77,Trojaned,None,None,위험도 0,0
+78,Trojaned,None,None,위험도 1,0
+79,Trojaned,None,None,위험도 2,0
+80,Trojaned,None,None,위험도 3,0
+81,Trojaned,None,None,위험도 4,0
+82,Trojaned,None,None,위험도 5,15
+83,Trojaned,None,None,위험도 6,0
+84,Windows,None,None,위험도 0,0
+85,Windows,None,None,위험도 1,13
+86,Windows,None,None,위험도 2,0
+87,Windows,None,None,위험도 3,0
+88,Windows,None,None,위험도 4,0
+89,Windows,None,None,위험도 5,0
+90,Windows,None,None,위험도 6,0
+91,[MON],localhost auditd[<NUM>],None,위험도 0,510
+92,[MON],localhost auditd[<NUM>],None,위험도 1,0
+93,[MON],localhost auditd[<NUM>],None,위험도 2,0
+94,[MON],localhost auditd[<NUM>],None,위험도 3,0
+95,[MON],localhost auditd[<NUM>],None,위험도 4,0
+96,[MON],localhost auditd[<NUM>],None,위험도 5,0
+97,[MON],localhost auditd[<NUM>],None,위험도 6,0
+98,[MON],localhost augenrules,None,위험도 0,8
+99,[MON],localhost augenrules,None,위험도 1,0
+100,[MON],localhost augenrules,None,위험도 2,0
+101,[MON],localhost augenrules,None,위험도 3,0
+102,[MON],localhost augenrules,None,위험도 4,0
+103,[MON],localhost augenrules,None,위험도 5,0
+104,[MON],localhost augenrules,None,위험도 6,0
+105,[MON],localhost bluetoothd,None,위험도 0,2
+106,[MON],localhost bluetoothd,None,위험도 1,0
+107,[MON],localhost bluetoothd,None,위험도 2,0
+108,[MON],localhost bluetoothd,None,위험도 3,0
+109,[MON],localhost bluetoothd,None,위험도 4,0
+110,[MON],localhost bluetoothd,None,위험도 5,0
+111,[MON],localhost bluetoothd,None,위험도 6,0
+112,[MON],localhost dbus-daemon,None,위험도 0,1
+113,[MON],localhost dbus-daemon,None,위험도 1,0
+114,[MON],localhost dbus-daemon,None,위험도 2,0
+115,[MON],localhost dbus-daemon,None,위험도 3,0
+116,[MON],localhost dbus-daemon,None,위험도 4,0
+117,[MON],localhost dbus-daemon,None,위험도 5,0
+118,[MON],localhost dbus-daemon,None,위험도 6,0
+119,[MON],localhost dbus[<NUM>],None,위험도 0,1
+120,[MON],localhost dbus[<NUM>],None,위험도 1,0
+121,[MON],localhost dbus[<NUM>],None,위험도 2,0
+122,[MON],localhost dbus[<NUM>],None,위험도 3,0
+123,[MON],localhost dbus[<NUM>],None,위험도 4,0
+124,[MON],localhost dbus[<NUM>],None,위험도 5,0
+125,[MON],localhost dbus[<NUM>],None,위험도 6,0
+126,[MON],localhost elasticsearch,None,위험도 0,7
+127,[MON],localhost elasticsearch,None,위험도 1,0
+128,[MON],localhost elasticsearch,None,위험도 2,0
+129,[MON],localhost elasticsearch,None,위험도 3,0
+130,[MON],localhost elasticsearch,None,위험도 4,0
+131,[MON],localhost elasticsearch,None,위험도 5,0
+132,[MON],localhost elasticsearch,None,위험도 6,0
+133,[MON],localhost esild-ml-start.sh,None,위험도 0,4383
+134,[MON],localhost esild-ml-start.sh,None,위험도 1,0
+135,[MON],localhost esild-ml-start.sh,None,위험도 2,0
+136,[MON],localhost esild-ml-start.sh,None,위험도 3,0
+137,[MON],localhost esild-ml-start.sh,None,위험도 4,0
+138,[MON],localhost esild-ml-start.sh,None,위험도 5,0
+139,[MON],localhost esild-ml-start.sh,None,위험도 6,0
+140,[MON],localhost gnome-session,None,위험도 0,1
+141,[MON],localhost gnome-session,None,위험도 1,0
+142,[MON],localhost gnome-session,None,위험도 2,0
+143,[MON],localhost gnome-session,None,위험도 3,0
+144,[MON],localhost gnome-session,None,위험도 4,0
+145,[MON],localhost gnome-session,None,위험도 5,0
+146,[MON],localhost gnome-session,None,위험도 6,0
+147,[MON],localhost journal,None,위험도 0,90
+148,[MON],localhost journal,None,위험도 1,0
+149,[MON],localhost journal,None,위험도 2,0
+150,[MON],localhost journal,None,위험도 3,0
+151,[MON],localhost journal,None,위험도 4,0
+152,[MON],localhost journal,None,위험도 5,0
+153,[MON],localhost journal,None,위험도 6,0
+154,[MON],localhost kdumpctl,None,위험도 0,1
+155,[MON],localhost kdumpctl,None,위험도 1,0
+156,[MON],localhost kdumpctl,None,위험도 2,0
+157,[MON],localhost kdumpctl,None,위험도 3,0
+158,[MON],localhost kdumpctl,None,위험도 4,0
+159,[MON],localhost kdumpctl,None,위험도 5,0
+160,[MON],localhost kdumpctl,None,위험도 6,0
+161,[MON],localhost kernel,None,위험도 0,146
+162,[MON],localhost kernel,None,위험도 1,22
+163,[MON],localhost kernel,None,위험도 2,0
+164,[MON],localhost kernel,None,위험도 3,0
+165,[MON],localhost kernel,None,위험도 4,0
+166,[MON],localhost kernel,None,위험도 5,0
+167,[MON],localhost kernel,None,위험도 6,5
+168,[MON],localhost kibana,None,위험도 0,170219
+169,[MON],localhost kibana,None,위험도 1,0
+170,[MON],localhost kibana,None,위험도 2,0
+171,[MON],localhost kibana,None,위험도 3,0
+172,[MON],localhost kibana,None,위험도 4,0
+173,[MON],localhost kibana,None,위험도 5,0
+174,[MON],localhost kibana,None,위험도 6,0
+175,[MON],localhost logstash,None,위험도 0,138436
+176,[MON],localhost logstash,None,위험도 1,0
+177,[MON],localhost logstash,None,위험도 2,0
+178,[MON],localhost logstash,None,위험도 3,0
+179,[MON],localhost logstash,None,위험도 4,0
+180,[MON],localhost logstash,None,위험도 5,0
+181,[MON],localhost logstash,None,위험도 6,0
+182,[MON],localhost mcelog,None,위험도 0,2
+183,[MON],localhost mcelog,None,위험도 1,0
+184,[MON],localhost mcelog,None,위험도 2,0
+185,[MON],localhost mcelog,None,위험도 3,0
+186,[MON],localhost mcelog,None,위험도 4,0
+187,[MON],localhost mcelog,None,위험도 5,0
+188,[MON],localhost mcelog,None,위험도 6,0
+189,[MON],localhost polkitd,None,위험도 0,2
+190,[MON],localhost polkitd,None,위험도 1,0
+191,[MON],localhost polkitd,None,위험도 2,0
+192,[MON],localhost polkitd,None,위험도 3,0
+193,[MON],localhost polkitd,None,위험도 4,0
+194,[MON],localhost polkitd,None,위험도 5,0
+195,[MON],localhost polkitd,None,위험도 6,0
+196,[MON],localhost postfix/master,None,위험도 0,0
+197,[MON],localhost postfix/master,None,위험도 1,3
+198,[MON],localhost postfix/master,None,위험도 2,0
+199,[MON],localhost postfix/master,None,위험도 3,0
+200,[MON],localhost postfix/master,None,위험도 4,0
+201,[MON],localhost postfix/master,None,위험도 5,0
+202,[MON],localhost postfix/master,None,위험도 6,0
+203,[MON],localhost pulseaudio[<NUM>],None,위험도 0,1
+204,[MON],localhost pulseaudio[<NUM>],None,위험도 1,0
+205,[MON],localhost pulseaudio[<NUM>],None,위험도 2,0
+206,[MON],localhost pulseaudio[<NUM>],None,위험도 3,0
+207,[MON],localhost pulseaudio[<NUM>],None,위험도 4,0
+208,[MON],localhost pulseaudio[<NUM>],None,위험도 5,0
+209,[MON],localhost pulseaudio[<NUM>],None,위험도 6,0
+210,[MON],localhost rc.local,None,위험도 0,2
+211,[MON],localhost rc.local,None,위험도 1,0
+212,[MON],localhost rc.local,None,위험도 2,0
+213,[MON],localhost rc.local,None,위험도 3,0
+214,[MON],localhost rc.local,None,위험도 4,0
+215,[MON],localhost rc.local,None,위험도 5,0
+216,[MON],localhost rc.local,None,위험도 6,0
+217,[MON],localhost sshd[<NUM>],None,위험도 0,3
+218,[MON],localhost sshd[<NUM>],None,위험도 1,210
+219,[MON],localhost sshd[<NUM>],None,위험도 2,0
+220,[MON],localhost sshd[<NUM>],None,위험도 3,1156
+221,[MON],localhost sshd[<NUM>],None,위험도 4,5
+222,[MON],localhost sshd[<NUM>],None,위험도 5,0
+223,[MON],localhost sshd[<NUM>],None,위험도 6,2
+224,[MON],localhost su,None,위험도 0,0
+225,[MON],localhost su,None,위험도 1,2
+226,[MON],localhost su,None,위험도 2,0
+227,[MON],localhost su,None,위험도 3,1
+228,[MON],localhost su,None,위험도 4,0
+229,[MON],localhost su,None,위험도 5,0
+230,[MON],localhost su,None,위험도 6,0
+231,[MON],localhost sudo,None,위험도 0,0
+232,[MON],localhost sudo,None,위험도 1,13812
+233,[MON],localhost sudo,None,위험도 2,1
+234,[MON],localhost sudo,None,위험도 3,0
+235,[MON],localhost sudo,None,위험도 4,0
+236,[MON],localhost sudo,None,위험도 5,0
+237,[MON],localhost sudo,None,위험도 6,0
+238,[MON],localhost suricata,None,위험도 0,17948
+239,[MON],localhost suricata,None,위험도 1,0
+240,[MON],localhost suricata,None,위험도 2,0
+241,[MON],localhost suricata,None,위험도 3,1
+242,[MON],localhost suricata,None,위험도 4,0
+243,[MON],localhost suricata,None,위험도 5,0
+244,[MON],localhost suricata,None,위험도 6,0
+245,[MON],localhost systemd,None,위험도 0,0
+246,[MON],localhost systemd,None,위험도 1,0
+247,[MON],localhost systemd,None,위험도 2,0
+248,[MON],localhost systemd,None,위험도 3,2210
+249,[MON],localhost systemd,None,위험도 4,0
+250,[MON],localhost systemd,None,위험도 5,0
+251,[MON],localhost systemd,None,위험도 6,0
+252,[MON],localhost unix_chkpwd[<NUM>],None,위험도 0,0
+253,[MON],localhost unix_chkpwd[<NUM>],None,위험도 1,0
+254,[MON],localhost unix_chkpwd[<NUM>],None,위험도 2,0
+255,[MON],localhost unix_chkpwd[<NUM>],None,위험도 3,122
+256,[MON],localhost unix_chkpwd[<NUM>],None,위험도 4,0
+257,[MON],localhost unix_chkpwd[<NUM>],None,위험도 5,0
+258,[MON],localhost unix_chkpwd[<NUM>],None,위험도 6,0
+259,[MON],localhost useradd[<NUM>],None,위험도 0,0
+260,[MON],localhost useradd[<NUM>],None,위험도 1,0
+261,[MON],localhost useradd[<NUM>],None,위험도 2,0
+262,[MON],localhost useradd[<NUM>],None,위험도 3,0
+263,[MON],localhost useradd[<NUM>],None,위험도 4,0
+264,[MON],localhost useradd[<NUM>],None,위험도 5,0
+265,[MON],localhost useradd[<NUM>],None,위험도 6,1
+266,[MON],localhost yum[<NUM>],None,위험도 0,0
+267,[MON],localhost yum[<NUM>],None,위험도 1,0
+268,[MON],localhost yum[<NUM>],None,위험도 2,0
+269,[MON],localhost yum[<NUM>],None,위험도 3,0
+270,[MON],localhost yum[<NUM>],None,위험도 4,0
+271,[MON],localhost yum[<NUM>],None,위험도 5,16
+272,[MON],localhost yum[<NUM>],None,위험도 6,0
+273,[MON],m2datateksolaris SC Alert,None,위험도 0,4
+274,[MON],m2datateksolaris SC Alert,None,위험도 1,0
+275,[MON],m2datateksolaris SC Alert,None,위험도 2,0
+276,[MON],m2datateksolaris SC Alert,None,위험도 3,0
+277,[MON],m2datateksolaris SC Alert,None,위험도 4,0
+278,[MON],m2datateksolaris SC Alert,None,위험도 5,0
+279,[MON],m2datateksolaris SC Alert,None,위험도 6,0
+280,[MON],sv260 sshd[<NUM>],None,위험도 0,1
+281,[MON],sv260 sshd[<NUM>],None,위험도 1,2
+282,[MON],sv260 sshd[<NUM>],None,위험도 2,0
+283,[MON],sv260 sshd[<NUM>],None,위험도 3,229
+284,[MON],sv260 sshd[<NUM>],None,위험도 4,5
+285,[MON],sv260 sshd[<NUM>],None,위험도 5,0
+286,[MON],sv260 sshd[<NUM>],None,위험도 6,0
+287,[MON],sv260 telnetd[<NUM>],None,위험도 0,1
+288,[MON],sv260 telnetd[<NUM>],None,위험도 1,0
+289,[MON],sv260 telnetd[<NUM>],None,위험도 2,0
+290,[MON],sv260 telnetd[<NUM>],None,위험도 3,0
+291,[MON],sv260 telnetd[<NUM>],None,위험도 4,0
+292,[MON],sv260 telnetd[<NUM>],None,위험도 5,0
+293,[MON],sv260 telnetd[<NUM>],None,위험도 6,0
+294,[YEAR],WinEvtLog: Application: ERROR,None,위험도 0,0
+295,[YEAR],WinEvtLog: Application: ERROR,None,위험도 1,0
+296,[YEAR],WinEvtLog: Application: ERROR,None,위험도 2,0
+297,[YEAR],WinEvtLog: Application: ERROR,None,위험도 3,20
+298,[YEAR],WinEvtLog: Application: ERROR,None,위험도 4,0
+299,[YEAR],WinEvtLog: Application: ERROR,None,위험도 5,0
+300,[YEAR],WinEvtLog: Application: ERROR,None,위험도 6,0
+301,[YEAR],WinEvtLog: System: ERROR,None,위험도 0,0
+302,[YEAR],WinEvtLog: System: ERROR,None,위험도 1,0
+303,[YEAR],WinEvtLog: System: ERROR,None,위험도 2,0
+304,[YEAR],WinEvtLog: System: ERROR,None,위험도 3,11
+305,[YEAR],WinEvtLog: System: ERROR,None,위험도 4,0
+306,[YEAR],WinEvtLog: System: ERROR,None,위험도 5,0
+307,[YEAR],WinEvtLog: System: ERROR,None,위험도 6,0
+308,error:,None,None,위험도 0,459
+309,error:,None,None,위험도 1,0
+310,error:,None,None,위험도 2,0
+311,error:,None,None,위험도 3,0
+312,error:,None,None,위험도 4,0
+313,error:,None,None,위험도 5,0
+314,error:,None,None,위험도 6,0
+315,juniper,None,None,위험도 0,4
+316,juniper,None,None,위험도 1,0
+317,juniper,None,None,위험도 2,0
+318,juniper,None,None,위험도 3,1
+319,juniper,None,None,위험도 4,0
+320,juniper,None,None,위험도 5,0
+321,juniper,None,None,위험도 6,0
+322,level,level : %{rule.level},None,위험도 0,10
+323,level,level : %{rule.level},None,위험도 1,8
+324,level,level : %{rule.level},None,위험도 2,0
+325,level,level : %{rule.level},None,위험도 3,0
+326,level,level : %{rule.level},None,위험도 4,0
+327,level,level : %{rule.level},None,위험도 5,0
+328,level,level : %{rule.level},None,위험도 6,0
+329,level,level : 10,None,위험도 0,27
+330,level,level : 10,None,위험도 1,13
+331,level,level : 10,None,위험도 2,0
+332,level,level : 10,None,위험도 3,0
+333,level,level : 10,None,위험도 4,0
+334,level,level : 10,None,위험도 5,3
+335,level,level : 10,None,위험도 6,0
+336,level,level : 2,None,위험도 0,18
+337,level,level : 2,None,위험도 1,6
+338,level,level : 2,None,위험도 2,0
+339,level,level : 2,None,위험도 3,0
+340,level,level : 2,None,위험도 4,0
+341,level,level : 2,None,위험도 5,2
+342,level,level : 2,None,위험도 6,0
+343,level,level : 3,None,위험도 0,593
+344,level,level : 3,None,위험도 1,282
+345,level,level : 3,None,위험도 2,0
+346,level,level : 3,None,위험도 3,7
+347,level,level : 3,None,위험도 4,0
+348,level,level : 3,None,위험도 5,18
+349,level,level : 3,None,위험도 6,0
+350,level,level : 4,None,위험도 0,2
+351,level,level : 4,None,위험도 1,2
+352,level,level : 4,None,위험도 2,0
+353,level,level : 4,None,위험도 3,0
+354,level,level : 4,None,위험도 4,0
+355,level,level : 4,None,위험도 5,0
+356,level,level : 4,None,위험도 6,0
+357,level,level : 5,None,위험도 0,859
+358,level,level : 5,None,위험도 1,422
+359,level,level : 5,None,위험도 2,0
+360,level,level : 5,None,위험도 3,4
+361,level,level : 5,None,위험도 4,0
+362,level,level : 5,None,위험도 5,41
+363,level,level : 5,None,위험도 6,0
+364,level,level : 7,None,위험도 0,10
+365,level,level : 7,None,위험도 1,2
+366,level,level : 7,None,위험도 2,0
+367,level,level : 7,None,위험도 3,0
+368,level,level : 7,None,위험도 4,0
+369,level,level : 7,None,위험도 5,0
+370,level,level : 7,None,위험도 6,0
+371,level,level : 8,None,위험도 0,0
+372,level,level : 8,None,위험도 1,1
+373,level,level : 8,None,위험도 2,0
+374,level,level : 8,None,위험도 3,0
+375,level,level : 8,None,위험도 4,0
+376,level,level : 8,None,위험도 5,1
+377,level,level : 8,None,위험도 6,0
+378,oscap:,ERROR: Timeout expired.,None,위험도 0,0
+379,oscap:,ERROR: Timeout expired.,None,위험도 1,0
+380,oscap:,ERROR: Timeout expired.,None,위험도 2,0
+381,oscap:,ERROR: Timeout expired.,None,위험도 3,0
+382,oscap:,ERROR: Timeout expired.,None,위험도 4,0
+383,oscap:,ERROR: Timeout expired.,None,위험도 5,1
+384,oscap:,ERROR: Timeout expired.,None,위험도 6,0
+385,oscap:,"msg: ""xccdf-overview""",None,위험도 0,0
+386,oscap:,"msg: ""xccdf-overview""",None,위험도 1,0
+387,oscap:,"msg: ""xccdf-overview""",None,위험도 2,0
+388,oscap:,"msg: ""xccdf-overview""",None,위험도 3,2
+389,oscap:,"msg: ""xccdf-overview""",None,위험도 4,0
+390,oscap:,"msg: ""xccdf-overview""",None,위험도 5,2
+391,oscap:,"msg: ""xccdf-overview""",None,위험도 6,0
+392,oscap:,"msg: ""xccdf-result""","severity: ""low""",위험도 0,0
+393,oscap:,"msg: ""xccdf-result""","severity: ""low""",위험도 1,0
+394,oscap:,"msg: ""xccdf-result""","severity: ""low""",위험도 2,0
+395,oscap:,"msg: ""xccdf-result""","severity: ""low""",위험도 3,196
+396,oscap:,"msg: ""xccdf-result""","severity: ""low""",위험도 4,0
+397,oscap:,"msg: ""xccdf-result""","severity: ""low""",위험도 5,0
+398,oscap:,"msg: ""xccdf-result""","severity: ""low""",위험도 6,0
+399,oscap:,"msg: ""xccdf-result""","severity: ""medium""",위험도 0,0
+400,oscap:,"msg: ""xccdf-result""","severity: ""medium""",위험도 1,0
+401,oscap:,"msg: ""xccdf-result""","severity: ""medium""",위험도 2,0
+402,oscap:,"msg: ""xccdf-result""","severity: ""medium""",위험도 3,0
+403,oscap:,"msg: ""xccdf-result""","severity: ""medium""",위험도 4,0
+404,oscap:,"msg: ""xccdf-result""","severity: ""medium""",위험도 5,165
+405,oscap:,"msg: ""xccdf-result""","severity: ""medium""",위험도 6,0
+406,ossec:,Agent started:,None,위험도 0,0
+407,ossec:,Agent started:,None,위험도 1,5
+408,ossec:,Agent started:,None,위험도 2,0
+409,ossec:,Agent started:,None,위험도 3,0
+410,ossec:,Agent started:,None,위험도 4,0
+411,ossec:,Agent started:,None,위험도 5,0
+412,ossec:,Agent started:,None,위험도 6,0
+413,ossec:,File rotated (inode changed):,None,위험도 0,0
+414,ossec:,File rotated (inode changed):,None,위험도 1,24
+415,ossec:,File rotated (inode changed):,None,위험도 2,0
+416,ossec:,File rotated (inode changed):,None,위험도 3,0
+417,ossec:,File rotated (inode changed):,None,위험도 4,0
+418,ossec:,File rotated (inode changed):,None,위험도 5,0
+419,ossec:,File rotated (inode changed):,None,위험도 6,0
+420,ossec:,output: 'netstat listening ports':,None,위험도 0,0
+421,ossec:,output: 'netstat listening ports':,None,위험도 1,0
+422,ossec:,output: 'netstat listening ports':,None,위험도 2,0
+423,ossec:,output: 'netstat listening ports':,None,위험도 3,0
+424,ossec:,output: 'netstat listening ports':,None,위험도 4,0
+425,ossec:,output: 'netstat listening ports':,None,위험도 5,1289
+426,ossec:,output: 'netstat listening ports':,None,위험도 6,0
+427,type=AVC,None,None,위험도 0,0
+428,type=AVC,None,None,위험도 1,369
+429,type=AVC,None,None,위험도 2,0
+430,type=AVC,None,None,위험도 3,0
+431,type=AVC,None,None,위험도 4,0
+432,type=AVC,None,None,위험도 5,0
+433,type=AVC,None,None,위험도 6,0
+434,type=SYSCALL,None,None,위험도 0,0
+435,type=SYSCALL,None,None,위험도 1,116496
+436,type=SYSCALL,None,None,위험도 2,0
+437,type=SYSCALL,None,None,위험도 3,0
+438,type=SYSCALL,None,None,위험도 4,0
+439,type=SYSCALL,None,None,위험도 5,0
+440,type=SYSCALL,None,None,위험도 6,0
+441,type=USER_AVC,None,None,위험도 0,0
+442,type=USER_AVC,None,None,위험도 1,3
+443,type=USER_AVC,None,None,위험도 2,0
+444,type=USER_AVC,None,None,위험도 3,0
+445,type=USER_AVC,None,None,위험도 4,0
+446,type=USER_AVC,None,None,위험도 5,0
+447,type=USER_AVC,None,None,위험도 6,0

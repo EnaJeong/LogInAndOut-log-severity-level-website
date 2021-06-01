@@ -1,0 +1,99 @@
+{% extends 'base.html' %}
+
+{% block topbar %}
+    <span class="page-title">위험도 예측</span>
+{% endblock %}
+
+{% block content %}
+
+    <div class="row mb-4 justify-content-md-center">
+        <div class="col-xl-10">
+            <form class="form" action="" method="post">
+                {% csrf_token %}
+                <div class="form-inline">
+                    {{ form }}
+                </div>
+                <button class="btn btn-secondary mt-2" style="margin-left: 5.7rem;" type="submit">검사하기</button>
+            </form>
+        </div>
+    </div>
+
+    {% if log %}
+
+        <div class="row justify-content-md-center">
+            <div class="col">
+                <h1 class="font-weight-bold text-primary text-center">
+                    위험도 분석 결과
+                </h1>
+            </div>
+        </div>
+        <div class="row no-gutters justify-content-md-center pt-4 pb-3">
+            <btn class="btn-severity btn-severity-{{ prediction }} mb-0">
+                {{ category }}
+            </btn>
+        </div>
+        <div class="row no-gutters justify-content-md-center pb-2">
+            <div class="h4 text-center mb-4">
+                {% if prediction != 7 %}
+                    {{ max_proba }}%의 확률로
+                    <span class="font-weight-bold text-severity-{{ prediction }}">위험도 {{ prediction }}</span> 입니다.
+                {% else %}
+                    기존에 없던 유형의 로그입니다.
+                {% endif %}
+            </div>
+        </div>
+        <div class="row justify-content-md-center mb-4">
+            <div class="text-s text-center">
+                * 위험도 0 정상 / 1~2 주의 / 3~4 경계 / 5~6 심각 / 알려지지 않은 유형
+            </div>
+        </div>
+
+        <div class="blank py-2"></div>
+
+        <!-- radar : 결과 확률 -->
+        <div class="row justify-content-md-center">
+            <div class="col-xl-6">
+                <div class="chart-view">
+                    <canvas id="predictionChart"></canvas>
+                </div>
+            </div>
+        </div>
+
+        <div class="blank py-4"></div>
+
+        <div class="row justify-content-md-center">
+            <div class="col-xl-10 code-container p-3">
+                <div class="row">
+                    <div class="col flex-grow-0">
+                        <samp class="text-lg text-white">
+                            >>>
+                        </samp>
+                    </div>
+                    <div class="col">
+                        <samp class="text-lg text-white">
+                            {{ log }}
+                        </samp>
+                    </div>
+                </div>
+                <br>
+                <samp class="text-lg text-white">
+                    {{ masked }}
+                </samp>
+            </div>
+        </div>
+
+        <div class="blank py-4"></div>
+    {% endif %}
+{% endblock %}
+
+{% block script %}
+    {% load static %}
+    <script src="{% static 'js/chart/prediction.js' %}"></script>
+    {% if proba %}
+        <script>
+            PredictionChart.genRadarChart(
+              {{ proba }}, {{ prediction }}
+            );
+        </script>
+    {% endif %}
+{% endblock %}

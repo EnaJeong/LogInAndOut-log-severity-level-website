@@ -1,0 +1,63 @@
+.form-inline {
+  .form-control {
+    flex-grow: 1;
+    box-shadow: none;
+  }
+
+  label {
+    margin-right: 1rem;
+    font-size: 1.1rem;
+  }
+}
+
+.no-form {
+  display: flex;
+  justify-content: space-between;
+
+  input[type="radio"] {
+      display:none;
+  }
+
+  input[type="radio"] + div {
+    display: flex;
+    align-items: center;
+
+    span {
+      display: inline-block;
+      width: 46px;
+      height: 42px;
+      vertical-align: middle;
+      background: url(../image/icons/checkbox.png) left top no-repeat;
+    }
+
+    button {
+      font-size: 1.2rem;
+      width: 15rem;
+      height: 3rem;
+      cursor: auto;
+      background: none;
+      border: 3px solid #D5D5D5;
+
+      display: flex;
+      justify-content: center;
+      align-items: center;
+
+      img {
+        height:1.8rem;
+        width:auto;
+        margin-right:0.5em;
+      }
+    }
+  }
+
+  input[type="radio"]:checked + div {
+
+    span {
+      background: url(../image/icons/checkbox_checked.png) left top no-repeat;
+    }
+
+    button {
+      border-color: #64A2AE;
+    }
+  }
+}

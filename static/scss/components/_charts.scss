@@ -1,0 +1,32 @@
+.chart-view {
+  position: relative;
+  height: $chart-height-m;
+  width: 100%;
+  @include media-breakpoint-up(md) {
+    height: $chart-height;
+  }
+}
+
+.chart-static {
+  position: relative;
+  height: $chart-height;
+  width: 100%;
+}
+
+.chart-large {
+  position: relative;
+  height: $chart-height;
+  width: 100%;
+  @include media-breakpoint-up(md) {
+    height: $chart-height-l;
+  }
+}
+
+.chart-medium {
+  position: relative;
+  height: $chart-height-s;
+  width: 100%;
+  @include media-breakpoint-up(md) {
+    height: $chart-height-m;
+  }
+}

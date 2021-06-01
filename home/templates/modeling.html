@@ -1,0 +1,219 @@
+{% extends 'base.html' %}
+
+{% block topbar %}
+    <span class="page-title">모델링</span>
+    <div class="quick-link-wrapper d-md-flex flex-md-wrap">
+        <ul class="quick-links">
+            <li><a class="selected" href="{% url 'modeling' %}">모델 상세</a></li>
+            <li><a href="{% url 'modeling_ranking' %}">대회 순위 그래프</a></li>
+        </ul>
+    </div>
+{% endblock %}
+
+{% block content %}
+    {% load static %}
+
+    <div class="row justify-content-md-center align-items-center">
+        <div class="col-lg-12">
+            <h1 class="font-weight-bold text-primary text-center">
+                버전별 예측 결과
+            </h1>
+        </div>
+    </div>
+
+    <div class="row justify-content-md-center">
+        <div class="text-center">
+            버전을 클릭하면 검증 결과가 나타납니다.
+        </div>
+    </div>
+
+    <div class="row ranking__category justify-content-md-center pt-1">
+        <ul class="categories">
+            {% for ranking in rankings.all %}
+                <li class="mx-1">
+                    <div class="col">
+                        <div class="row">
+                            <button type="button" class="category-button btn btn-category" onClick="Modeling.changeState('{{ ranking.title | urlencode  }}')" data-category="{{ ranking.title | urlencode  }}">
+                                {{ ranking.title }}
+                            </button>
+                        </div>
+                        <div class="row justify-content-md-center text-xs">
+                            <span>
+                                {{ ranking.date }} v{{ ranking.version }}
+                            </span>
+                        </div>
+                    </div>
+                </li>
+            {% endfor %}
+        </ul>
+    </div>
+
+    <div class="row">
+        <div class="col-xl-5">
+            <div class="card shadow mb-4">
+                <div class="card-header py-3 d-flex flex-row align-items-center justify-content-between">
+                    <h4 class="font-weight-bold text-primary m-0">
+                        예측 모델
+                    </h4>
+                </div>
+                <div class="card-body">
+                    <!-- 모델 -->
+                    <div class="row no-gutters mb-2">
+                        <div class="text-lg  font-weight-bold text-primary">
+                            학습 모델
+                        </div>
+                    </div>
+                    <div class="row no-gutters mb-4">
+                        <div class="col">
+                            <div class="no-form">
+                                <input type="radio" id="random-forest" name="model" disabled/>
+                                <div for="random-forest">
+                                    <span></span>
+                                    <button>
+                                        <img src="{% static 'image/modeling/RandomForestClassifier.png' %}" alt="Random Forest 아이콘">
+                                        Random Forest
+                                    </button>
+                                </div>
+                                <input type="radio" id="extra-trees" name="model" disabled/>
+                                <div for="extra-trees">
+                                    <span></span>
+                                    <button>
+                                        <img src="{% static 'image/modeling/ExtraTreesClassifier.png' %}" alt="Extra Trees 아이콘">
+                                        Extra Trees
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Vectorizer -->
+                    <div class="row no-gutters mb-2">
+                        <div class="text-lg  font-weight-bold text-primary">
+                            단어 숫자화 (Vectorizer)
+                        </div>
+                    </div>
+                    <div class="row no-gutters mb-4">
+                        <div class="col">
+                            <div class="no-form">
+                                <input type="radio" id="count-vectorizer" name="vectorizer" disabled/>
+                                <div for="count-vectorizer">
+                                    <span></span>
+                                    <button>
+                                        <img src="{% static 'image/modeling/CountVectorizer.png' %}" alt="Count Vectorizer 아이콘">
+                                        Count Vectorizer
+                                    </button>
+                                </div>
+                                <input type="radio" id="tfidf-vectorizer" name="vectorizer" disabled/>
+                                <div for="tfidf-vectorizer">
+                                    <span></span>
+                                    <button>
+                                        <img src="{% static 'image/modeling/TfidfVectorizer.png' %}" alt="Tfidf Vectorizer 아이콘">
+                                        Tfidf Vectorizer
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- 전처리 -->
+                    <div class="row no-gutters mb-2">
+                        <div class="text-lg font-weight-bold text-primary mb-1">
+                            숫자 마스킹
+                        </div>
+                    </div>
+                    <div class="row no-gutters mb-4">
+                        <div class="col">
+                            <div class="no-form">
+                                <input type="radio" id="num-masking" name="masking" disabled/>
+                                <div for="num-masking">
+                                    <span></span>
+                                    <button>단순 마스킹</button>
+                                </div>
+                                <input type="radio" id="various-masking" name="masking" disabled/>
+                                <div for="various-masking">
+                                    <span></span>
+                                    <button>의미별 마스킹</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row no-gutters mb-2">
+                        <div class="text-lg font-weight-bold text-primary mb-1">
+                            이상치
+                        </div>
+                    </div>
+                    <div class="row no-gutters mb-4">
+                        <div class="col">
+                            <div class="no-form">
+                                <input type="radio" id="outlier-included" name="outlier" disabled/>
+                                <div for="outlier-included">
+                                    <span></span>
+                                    <button>이상치 포함</button>
+                                </div>
+                                <input type="radio" id="outlier-excluded" name="outlier" disabled/>
+                                <div for="outlier-excluded">
+                                    <span></span>
+                                    <button>이상치 제거</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-xl-7">
+            <!-- Content Row : 결과 -->
+            <div class="card shadow mb-4">
+                <div class="card-header py-3 d-flex flex-row align-items-center justify-content-between">
+                    <h4 class="font-weight-bold text-primary m-0">
+                        검증 결과
+                    </h4>
+                </div>
+                <div class="card-body">
+                    <div class="row justify-content-md-center mb-4">
+                        <div class="chart-medium">
+                            <canvas id="resultChart"></canvas>
+                        </div>
+                    </div>
+                    <div class="row no-gutters pt-4 mb-4">
+                        <div class="col text-center">
+                            <span class="h1 font-weight-bold text-primary">
+                                성능 평가 지수
+                            </span>
+                            <br>
+                            <span class="font-weight-bold text-black text-big-5" id="detail-score">
+                            </span>
+                            <span class="font-weight-bold text-muted text-big-4" id="detail-rank">
+                            </span>
+                        </div>
+                    </div>
+                    <div class="row justify-content-md-center">
+                        <div class="text-s text-center text-mute">
+                            * macro F1 (정밀도 및 재현율 지표의 조화 평균 점수) 기준
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+{% endblock %}
+
+{% block script %}
+    <script>
+        RESULTS = {};
+        {% for ranking in rankings.all %}
+            RESULTS["{{ ranking.title | urlencode }}"] = {
+                "masking"    : "{{ ranking.masking }}",
+                "outlier"    : "{{ ranking.outlier }}",
+                "vectorizer" : "{{ ranking.vectorizer }}",
+                "model"      : "{{ ranking.model }}",
+                "score"      : {{ ranking.score | floatformat:4 }},
+                "rank"       : {{ ranking.rank }},
+                "result"     : {{ ranking.results }},
+            }
+        {% endfor %}
+
+        console.log(RESULTS);
+    </script>
+    <script src="{% static 'js/modeling.js' %}"></script>
+{% endblock %}

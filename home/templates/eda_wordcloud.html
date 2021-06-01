@@ -1,0 +1,53 @@
+{% extends 'base.html' %}
+
+{% block topbar %}
+    <span class="page-title">데이터 시각화</span>
+    <div class="quick-link-wrapper d-md-flex flex-md-wrap">
+        <ul class="quick-links">
+            <li><a href="{% url 'eda' %}">데이터 분포</a></li>
+            <li><a class="selected" href="{% url 'eda_wordcloud' %}">위험도별 최다 빈출 단어</a></li>
+        </ul>
+    </div>
+{% endblock %}
+
+{% block content %}
+    {% load static %}
+
+    <div class="row wordcloud__category justify-content-md-center">
+        <ul class="categories">
+            <li>
+                <button type="button" class="category-button btn btn-secondary" onClick="WordCloud.viewAll()" data-category="all">All</button>
+            </li>
+            {% for _ in "x"|rjust:"7"  %}
+                <li>
+                    <button type="button" class="category-button btn btn-level-{{ forloop.counter0 }}" onClick="WordCloud.changeState('{{ forloop.counter0 }}')" data-category="{{ forloop.counter0 }}">
+                        위험도 {{ forloop.counter0 }}
+                    </button>
+                </li>
+            {% endfor %}
+        </ul>
+    </div>
+
+    {% for _ in "x"|rjust:"7"  %}
+        <div class="wordcloud-image" data-category="{{ forloop.counter0 }}">
+            <div class="row justify-content-md-center">
+                <div class="col-xl-11 col-lg-12">
+                    <div class="card shadow mb-4">
+                        <div class="card-body">
+                            <h4 class="card-title text-center mb-3">위험도 Level {{ forloop.counter0 }}</h4>
+                            <div class="row justify-content-md-center m-2">
+                                <img class="card-img" src="{% static 'image/wordcloud/level'%}{{ forloop.counter0 }}.png" alt="">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    {% endfor %}
+
+{% endblock %}
+
+{% block script %}
+    {% load static %}
+        <script src="{% static 'js/wordcloud.js' %}"></script>
+{% endblock %}

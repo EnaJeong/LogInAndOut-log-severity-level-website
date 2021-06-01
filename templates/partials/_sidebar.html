@@ -1,0 +1,45 @@
+<ul class="navbar-nav sidebar sidebar-dark accordion" id="accordionSidebar">
+
+    <!-- Sidebar - Brand -->
+    <a class="sidebar-brand d-flex align-items-center justify-content-center" href="{% url 'main' %}">
+        <div class="sidebar-brand-icon rotate-n-15">
+            <i class="fas fa-exclamation-triangle"></i>
+        </div>
+        <div class="sidebar-brand-text ml-3">Log In&Out</div>
+    </a>
+
+    <!-- Divider -->
+    <hr class="sidebar-divider my-0">
+
+    <!-- Nav Item - EDA -->
+    <li class="nav-item">
+        <a class="nav-link" href="{% url 'eda' %}">
+            <i class="fas fa-fw fa-chart-pie"></i>
+            <span>데이터 시각화</span>
+        </a>
+    </li>
+
+    <!-- Nav Item - Modeling -->
+    <li class="nav-item">
+        <a class="nav-link" href="{% url 'modeling' %}">
+            <i class="fas fa-fw fa-database"></i>
+            <span>모델링</span>
+        </a>
+    </li>
+
+    <!-- Nav Item - Tables -->
+    <li class="nav-item">
+        <a class="nav-link" href="{% url 'prediction' %}">
+            <i class="fas fa-fw fa-chart-bar"></i>
+            <span>위험도 예측</span>
+        </a>
+    </li>
+
+    <!-- Divider -->
+    <hr class="sidebar-divider d-none d-md-block">
+
+    <!-- Sidebar Toggler (Sidebar) -->
+    <div class="text-center d-none d-md-inline">
+        <button class="rounded-circle border-0" id="sidebarToggle"></button>
+    </div>
+</ul>

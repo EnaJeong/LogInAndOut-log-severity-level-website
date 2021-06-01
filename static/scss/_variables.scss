@@ -1,0 +1,174 @@
+////////// COLOR //////////
+$blue: #00aeef;
+$indigo: #6610f2;
+$purple: #ab8ce4;
+$pink: #E91E63;
+$red: #ff0017;
+$orange: #fb9678;
+$yellow: #ffd500;
+$green: #3bd949;
+$teal: #58d8a3;
+$cyan: #57c7d4;
+$white: #fff;
+$black: #000;
+
+$white-smoke: #f4f4f4 !default;
+$ghost-white: #f7fafc !default;
+$violet: #41478a !default;
+$darkslategray: #2e383e !default;
+$dodger-blue: #3498db !default;
+$blue-teal-gradient: linear-gradient(120deg, #556cdc, #128bfc, #18bef1);
+$blue-teal-gradient-light: linear-gradient(120deg, rgba(0, 228, 208, 0.7), rgba(89, 131, 232, 0.7));
+
+$colors: (
+    "blue":       $blue,
+    "indigo":     $indigo,
+    "purple":     $purple,
+    "pink":       $pink,
+    "red":        $red,
+    "orange":     $orange,
+    "yellow":     $yellow,
+    "green":      $green,
+    "teal":       $teal,
+    "cyan":       $cyan,
+    "white":      $white,
+    "gray":       $gray-600,
+    "black":      $black,
+
+    "white-smoke":   #f3f5f6,
+    "gray-light":    #8ba2b5,
+    "gray-lightest": #f7f7f9,
+    "gray-dark":     #292b2c,
+);
+
+$theme-color: #15628E;
+$theme-color-light: #0B82AC;
+$theme-color-dark: darken($theme-color, 15%);
+
+$theme-colors: (
+    "primary":    $theme-color, // 2196f3
+    "secondary":  #ced4da,
+    "success":    #19d895,
+    "info":       #8862e0,
+    "warning":    #ffaf00,
+    "danger":     #ff6258,
+    "light":      #fbfbfb,
+    "dark":       #252C46,
+
+    "level-0": #4EA4B0,
+    "level-1": #8DD1B0,
+    "level-2": #CEEBA4,
+    "level-3": #F6FA9E,
+    "level-4": #FEE6AE,
+    "level-5": #FCB698,
+    "level-6": #F3776A,
+);
+
+$severity-colors: (
+    "0": #3ED53A,
+    "1": #ECB864,
+    "2": #ECB864,
+    "3": #DA6A41,
+    "4": #DA6A41,
+    "5": #A62B18,
+    "6": #A62B18,
+    "7": #891F51,
+);
+
+// Set Contrast Threshold
+$yiq-contrasted-threshold: 195 !default;
+////////// COLOR //////////
+
+////////// FONT //////////
+$font-family: ('Noto Sans KR', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji") !default;
+$font-family-title: $font-family;
+$font-family-base: $font-family;
+
+$body-color: #5E5E5E;
+$border-radius: 0.35rem;
+$border-color: #CDD6DC;
+////////// FONT //////////
+
+////////// BASE //////////
+$content-bg: #fff;
+////////// BASE //////////
+
+////////// BUTTON //////////
+$btn-font-family: $font-family;
+$btn-font-size: 1rem;
+
+$button-fixed-width: 120px;
+$btn-line-height: 1;
+$btn-border-radius: .1875rem;
+
+$btn-category-hover: darken(#fbfbfb, 7.5%);
+////////// BUTTON //////////
+
+////////// CARD //////////
+$card-header-bg: $gray-100;
+$card-border-color: $border-color;
+
+$card-padding-y: 1.88rem;
+$card-padding-x: 1.81rem;
+////////// BUTTON //////////
+
+////////// OTHERS ////////
+// Shadows
+$box-shadow-sm: 0 0.125rem 0.25rem 0 rgba($gray-900, .2);
+$box-shadow: 0 0.15rem 1.75rem 0 rgba($gray-900, .15);
+// $box-shadow-lg: 0 1rem 3rem rgba($black, .175) !default;
+
+// Adjust column spacing for symmetry
+$spacer: 1rem;
+$grid-gutter-width: $spacer * 1.5;
+
+// Transitions
+$transition-collapse: height .15s ease;
+$transition-duration: 0.25s;
+
+// Dropdowns
+$dropdown-font-size: 0.85rem;
+$dropdown-border-color: $border-color;
+////////// OTHERS ////////
+
+////////// SIDE BAR ////////
+$sidebar-bg: $theme-color;
+$sidebar-base-width: 14rem !default;
+$sidebar-collapsed-width: 6.5rem !default;
+
+$sidebar-brand-icon-size: 2rem;
+$sidebar-brand-font-size: 1.3rem;
+$sidebar-brand-font-weight: 600;
+
+$sidebar-menu-icon-size: 1.1rem;
+$sidebar-menu-font-size: 1.1rem;
+$sidebar-collapsed-icon-size: 1.7rem;
+$sidebar-collapsed-font-size: 0.7rem;
+
+$sidebar-light-menu-color: #fff;
+$sidebar-light-menu-hover-bg: $theme-color-light;
+$sidebar-light-menu-hover-color:#fff;
+
+$sidebar-light-menu-active-bg: #fff;
+$sidebar-light-menu-active-color: #fff;
+///////// SIDE BAR ////////
+
+///////// TOP BAR ////////
+$topbar-base-height: 4.375rem !default;
+$topbar-title-color: $theme-color;
+$topbar-link-color: $body-color;
+$topbar-selected-link-color: #000; // #31A97F 429E9D DC143C
+///////// TOP BAR ////////
+
+///////// FOOTER ////////
+$footer-bg: #EBEBEB;
+// $footer-color: color(dark);
+// $footer-height: 60px;
+///////// FOOTER ////////
+
+///////// CHART ////////
+$chart-height: 30rem;
+$chart-height-l: 40rem;
+$chart-height-m: 20rem;
+$chart-height-s: 15rem;
+///////// CHART ////////
