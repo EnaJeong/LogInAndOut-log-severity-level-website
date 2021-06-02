@@ -1,5 +1,5 @@
 (function(){
-  const LABELS = ["May 5", "May 6", "May 7", "May 8", "May 9", "May 10", "May 11", "May 12", "May 13", "May 14"];
+  const LABELS = ["5월 5일", "5월 6일", "5월 7일", "5월 8일", "5월 9일", "5월 10일", "5월 11일", "5월 12일", "5월 13일", "5월 14일"];
   const RANKING = [61, 51, 56, 14, 14, 8, 8, 8, 6, 6];
   const BASE_COLOR = "rgba(78, 115, 223, 1)";
   const FILLING_COLOR = "rgba(78, 115, 223, 0.05)";

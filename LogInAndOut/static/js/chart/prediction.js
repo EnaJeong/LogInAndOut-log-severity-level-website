@@ -25,7 +25,7 @@ const PredictionChart = {
         labels: LevelChart.LEVEL_LABELS.slice(0, data.length),
         datasets: [
           {
-            label: 'Probability',
+            label: '확률',
             data: data,
             fill: true,
             backgroundColor: backgroundColor,
@@ -37,7 +37,7 @@ const PredictionChart = {
             // borderWidth: 10,
           },
           {
-            label: 'Threshold',
+            label: '임계치',
             data: thresholds,
             fill: false,
             borderColor: thresholdColor,
