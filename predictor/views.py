@@ -17,7 +17,7 @@ class Utils:
     vectorizer = classifiers['Vectorizer']
     classifiers = classifiers['Classifiers']
 
-    THRESHOLDS = [0.83, 0.75, 0.9, 0.75, 0.9, 0.75, 0.8]
+    THRESHOLDS = [0.83, 0.8, 0.9, 0.8, 0.9, 0.8, 0.8]
 
     PATTERNS = [('\d{4}-\d{2}-\d{2}T\d{2}:\d{2}:\d{2}Z?', '<TS>'),
                 # YEAR, MON, DAY, TIME

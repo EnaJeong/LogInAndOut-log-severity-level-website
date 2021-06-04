@@ -1,6 +1,6 @@
 (function(){
-  const LABELS = ["5월 5일", "5월 6일", "5월 7일", "5월 8일", "5월 9일", "5월 10일", "5월 11일", "5월 12일", "5월 13일", "5월 14일"];
-  const RANKING = [61, 51, 56, 14, 14, 8, 8, 8, 6, 6];
+  const LABELS = ["5월 5일", "5월 6일", "5월 7일", "5월 8일", "5월 9일", "5월 10일", "5월 11일", "5월 12일", "5월 13일", "5월 14일", "5월 25일"];
+  const RANKING = [61, 51, 56, 14, 14, 8, 8, 8, 6, 6, 4];
   const BASE_COLOR = "rgba(78, 115, 223, 1)";
   const FILLING_COLOR = "rgba(78, 115, 223, 0.05)";
 
@@ -43,7 +43,7 @@
     data: {
       labels: LABELS.slice(0, 1),
       datasets: [{
-        label: "Public Ranking",
+        label: "Ranking",
         data: RANKING.slice(0, 1),
         fill: "start",
         lineTension: 0,
