@@ -1,0 +1,8 @@
+# django SECRET_KEY
+secrets.json
+
+# byte-compiled
+__pycache__/
+
+# large files
+predictor/models
