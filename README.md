@@ -1,4 +1,4 @@
-# LogInAndOut-log_severity_level_website
+# LogInAndOut-log-severity-level-website
 
 > 아시아경제 교육센터 파이썬 기반 응용AI 개발자 양성과정 프로젝트
 
