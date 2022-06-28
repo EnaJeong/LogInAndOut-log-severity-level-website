@@ -12,7 +12,7 @@
 
 ### 참조 
 
-로그 데이터 분석 repository: [LogInAndOut-log-severity-level-analysis](https://github.com/EnaJeong/LogInAndOut-log-severity-level-analysis)
+- 로그 데이터 분석 프로젝트: [LogInAndOut-log-severity-level-analysis](https://github.com/EnaJeong/LogInAndOut-log-severity-level-analysis)
 
 
 ## 설치 및 실행
